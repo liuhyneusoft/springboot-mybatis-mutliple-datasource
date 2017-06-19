@@ -17,7 +17,7 @@ import javax.sql.DataSource;
  * Created by Administrator on 2016/12/17.
  */
 @Configuration
-@MapperScan(basePackages = {"demo.repository.master"}, sqlSessionFactoryRef = "masterSqlSessionFactory")
+@MapperScan(basePackages = {"com.bz.mapper"}, sqlSessionFactoryRef = "masterSqlSessionFactory")
 public class MasterConfig {
     @Primary
     @Bean(name = "masterDataSource")
