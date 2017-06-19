@@ -22,7 +22,7 @@ import javax.sql.DataSource;
  * Created by Administrator on 2016/12/17.
  */
 @Configuration
-@MapperScan(basePackages = {"demo.repository.slave"}, sqlSessionFactoryRef = "slaveSqlSessionFactory")
+@MapperScan(basePackages = {"com.bz.mapper"}, sqlSessionFactoryRef = "slaveSqlSessionFactory")
 public class SlaveConfig {
     @Bean(name = "slaveDataSource")
     @ConfigurationProperties(prefix = "datasource.slave")
